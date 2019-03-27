@@ -4,11 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".activies.MainActivity">
 
-    <com.example.desighviewtext.views.FirstDesignView
+    <!--<com.example.desighviewtext.views.FirstDesignView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:background="#0f0"/>-->
+
+    <com.example.desighviewtext.views.MyTextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#0f0"/>
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textSize="35dp"
+        android:text="My android TextView"/>
 
 </LinearLayout>
