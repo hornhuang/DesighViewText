@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TopBar">
+        <attr name="title" format="string"></attr>
+        <attr name="titleTextSize" format="dimension"></attr>
+        <attr name="titleTextColor" format="color"></attr>
+        <attr name="leftTextColor" format="color"></attr>
+        <attr name="leftBackground" format="reference|color"></attr>
+        <attr name="leftText" format="string"></attr>
+        <attr name="rightTextColor" format="color"></attr>
+        <attr name="rightBackground" format="reference|color"></attr>
+        <attr name="rightText" format="string"></attr>
+    </declare-styleable>
+</resources>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<resources>-->
+    <!--&lt;!&ndash;-->
+         <!--使用declare-styleable标签定义控件,name为控件名-->
+         <!--使用attr标签定义控件的属性,name为属性名,format为属性的类型-->
+     <!--&ndash;&gt;-->
+    <!--<declare-styleable name="topBar">-->
+        <!--<attr name="tbTitle" format="string" />-->
+        <!--<attr name="titleTextSize" format="dimension" />-->
+        <!--<attr name="titleTextColor" format="color" />-->
+
+        <!--<attr name="leftText" format="string" />-->
+        <!--<attr name="leftBackground" format="reference|color" />-->
+        <!--<attr name="leftTextColor" format="color" />-->
+
+        <!--<attr name="rightText" format="string" />-->
+        <!--<attr name="rightBackground" format="reference|color" />-->
+        <!--<attr name="rightTextColor" format="color" />-->
+    <!--</declare-styleable>-->
+<!--</resources>-->

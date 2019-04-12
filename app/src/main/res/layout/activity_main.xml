@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".activies.MainActivity">
 
-    <!--<com.example.desighviewtext.views.FirstDesignView-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="100dp"-->
-        <!--android:background="#0f0"/>-->
-
-    <com.example.desighviewtext.views.MyTextView
+    <com.example.desighviewtext.views.TopBar
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_margin="10dp"
-        android:gravity="center"
-        android:textSize="35dp"
-        android:text="My android TextView"/>
+        android:layout_height="50dp"
+        custom:leftText = "BACK"
+        custom:leftBackground = "@android:color/holo_blue_bright"
+        custom:leftTextColor = "#FFFFFF"
+
+        custom:title = "自定义标题"
+        custom:titleTextSize = "10sp"
+        custom:titleTextColor = "#000000"
+
+        custom:rightText = "MORE"
+        custom:rightBackground = "@android:color/holo_blue_bright"
+        custom:rightTextColor = "#FFFFFF">
+
+    </com.example.desighviewtext.views.TopBar>
 
     <com.example.desighviewtext.views.UI3_6_3_1
         android:layout_width="match_parent"
