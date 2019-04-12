@@ -23,12 +23,7 @@ public class UI_3_6_3_2 extends View {
     private int mRectWidth;//每个小矩形的宽度
     private int mRectHeight;//每个小矩形的高度
     private int offset = 5;//每个小矩形之间的偏移量
-    private int currentHeight;
-    private int mViewWidth;//View的宽度
-    private float mCurrentHeight;//每个小矩形的当前高度
-    private int mTopColor;//渐变色顶部颜色
-    private int mBottomColor;//渐变色底部颜色
-    private int mDelayTime;//View重绘延时时间
+    private float currentHeight;
 
 
     /*
@@ -86,7 +81,7 @@ public class UI_3_6_3_2 extends View {
         super.onDraw(canvas);
         for ( int i = 0 ; i < mRectCount ; i++ ){
             mRandom = Math.random();
-            mCurrentHeight = (float) (mRectHeight * mRandom);
+            currentHeight = (float) (mRectHeight * mRandom);
             canvas.drawRect(
                     (float)(mWidth*0.4/2 + mRectWidth*i + offset),
                     currentHeight,
@@ -131,12 +126,11 @@ class VolumeView extends View {
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
         mWidth = getWidth();
-        mRectHeight = getHeight();
+        mRectHeight = getHeight() / 2;
         mRectWidth = (int) (mWidth * 0.6 / mRectCount);
-//android.graphics.LinearGradient.LinearGradient(float x0, float y0, float x1, float y1, int color0, int color1, TileMode tile)
+        //android.graphics.LinearGradient.LinearGradient(float x0, float y0, float x1, float y1, int color0, int color1, TileMode tile)
 
         //颜色渐变
-
         mLinearGradient = new LinearGradient(
                 0,
                 0,
@@ -149,7 +143,6 @@ class VolumeView extends View {
     }
 
     //绘制一个个的高度随机变化的小矩形
-
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
@@ -168,9 +161,7 @@ class VolumeView extends View {
         }
 
         //void android.view.View.postInvalidateDelayed(long delayMilliseconds)
-
         //每隔300ms通知View重绘
-
         postInvalidateDelayed(300);
     }
 }
