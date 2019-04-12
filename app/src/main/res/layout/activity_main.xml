@@ -20,4 +20,8 @@
         android:textSize="35dp"
         android:text="My android TextView"/>
 
+    <com.example.desighviewtext.views.UI3_6_3_1
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
 </LinearLayout>
