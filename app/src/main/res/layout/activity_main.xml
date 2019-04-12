@@ -7,24 +7,30 @@
     android:orientation="vertical"
     tools:context=".activies.MainActivity">
 
-    <com.example.desighviewtext.views.TopBar
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        custom:leftText = "BACK"
-        custom:leftBackground = "@android:color/holo_blue_bright"
-        custom:leftTextColor = "#FFFFFF"
+    <!--<com.example.desighviewtext.views.TopBar-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--custom:leftText = "BACK"-->
+        <!--custom:leftBackground = "@android:color/holo_blue_bright"-->
+        <!--custom:leftTextColor = "#FFFFFF"-->
 
-        custom:title = "自定义标题"
-        custom:titleTextSize = "10sp"
-        custom:titleTextColor = "#000000"
+        <!--custom:title = "自定义标题"-->
+        <!--custom:titleTextSize = "10sp"-->
+        <!--custom:titleTextColor = "#000000"-->
 
-        custom:rightText = "MORE"
-        custom:rightBackground = "@android:color/holo_blue_bright"
-        custom:rightTextColor = "#FFFFFF">
+        <!--custom:rightText = "MORE"-->
+        <!--custom:rightBackground = "@android:color/holo_blue_bright"-->
+        <!--custom:rightTextColor = "#FFFFFF">-->
 
-    </com.example.desighviewtext.views.TopBar>
+    <!--</com.example.desighviewtext.views.TopBar>-->
 
-    <com.example.desighviewtext.views.UI3_6_3_1
+    <!--<com.example.desighviewtext.views.UI3_6_3_1-->
+        <!--android:id="@+id/ui_3_6_3_1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+    <com.example.desighviewtext.views.UI_3_6_3_2
+        android:id="@+id/ui_3_6_3_2"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
