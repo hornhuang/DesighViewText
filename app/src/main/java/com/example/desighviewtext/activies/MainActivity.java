@@ -6,14 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.example.desighviewtext.R;
-import com.example.desighviewtext.views.TopBar;
-import com.example.desighviewtext.views.TopBarOnClickListener;
-import com.example.desighviewtext.views.UI3_6_3_1;
-import com.example.desighviewtext.views.UI_3_6_3_2;
+import com.example.desighviewtext.views.*;
 
 public class MainActivity extends BaseActivity {
 
@@ -21,6 +19,7 @@ public class MainActivity extends BaseActivity {
     private TopBar topBar;
     private UI3_6_3_1 ui3_6_3_1;
     private UI_3_6_3_2 ui_3_6_3_2;
+    private ViewGroup_3_7 viewGroup_3_7;
 
     private Handler handler = new Handler(){
         @Override
@@ -85,6 +84,7 @@ public class MainActivity extends BaseActivity {
 //            }
 //        }.start();
 
-        ui_3_6_3_2 = (UI_3_6_3_2)findViewById(R.id.ui_3_6_3_2);
+//        ui_3_6_3_2 = (UI_3_6_3_2)findViewById(R.id.ui_3_6_3_2);
+//        viewGroup_3_7 = (ViewGroup_3_7) findViewById(R.id.view_group_3_7);
     }
 }

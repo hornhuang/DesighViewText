@@ -1,17 +1,13 @@
 package com.example.desighviewtext.views;
 
 import android.content.Context;
-import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.LinearGradient;
 import android.graphics.Paint;
 import android.graphics.Shader;
-import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.view.View;
-
-import com.example.desighviewtext.R;
 
 public class UI_3_6_3_2 extends View {
 
